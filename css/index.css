@@ -1,0 +1,541 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/*背景音乐*/
+.music{
+    display: block;
+    background: url("../music.png");
+    position: fixed;
+    right: 0.3rem;
+    top: 0.3rem;
+    width: 0.88rem;
+    height: 0.88rem;
+    background-size: 0.88rem 0.88rem;
+    z-index: 999;
+}
+.rotateMusic{
+    animation: rotateMusic 2s linear infinite;
+}
+@keyframes rotateMusic{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+/*背景音乐*/
+/*上划箭头*/
+.arrow{
+    width: 0.5rem;
+    height: 0.3rem;
+    background: url("../icon_up.png") no-repeat;
+    background-size: 0.5rem 0.3rem;
+    position: fixed;
+    bottom: 0.8rem;
+    left: 45%;
+    z-index: 9999;
+}
+.arrowMove{
+    animation: arrowMove 1.3s linear infinite;
+}
+@keyframes arrowMove {
+
+    0%{transform: translateY(0);opacity: 1;}
+    100%{transform: translateY(-0.4rem);opacity: 0;}
+}
+/*上划箭头*/
+
+.swiper-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.page1{
+    background: url("../4dcf966e78a1ca2070d34bc74fd47f35%20(1).jpg");
+    width: 6.4rem;
+    background-size: 6.5rem 12rem;
+}
+.page1 .ge{
+     font-size: 1rem;
+     position: absolute;
+     top: 3.5rem;
+     left: 2.8rem;
+ }
+.page1 .ren{
+    font-size: 1rem;
+    position: absolute;
+    top: 4.8rem;
+    left: 2.8rem;
+}
+.page1 .jian{
+    font-size: 1rem;
+    position: absolute;
+    top: 6.1rem;
+    left: 2.8rem;
+}
+.page1 .li{
+    font-size: 1rem;
+    position: absolute;
+    top: 7.4rem;
+    left: 2.8rem;
+}
+
+
+.page2{
+    background: url("../4dcf966e78a1ca2070d34bc74fd47f35%20(1).jpg");
+    width: 6.4rem;
+    background-size: 6.5rem 12rem;
+}
+.page2 .gerenxinxi{
+    font-size: 0.6rem;
+    position: absolute;
+    top: 3.3rem;
+    left: 2rem;
+}
+.page2 .touxiang{
+    width: 2rem;
+    height: 2rem;
+    background-size: 2rem 2rem;
+    position: absolute;
+    top: 4.2rem;
+    left: 2.2rem;
+}
+.page2 .touxiang img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.page2 .xing{
+    font-size: 0.5rem;
+    position: absolute;
+    top: 6.5rem;
+    left:1.4rem;
+}
+.page2 .xueli{
+    font-size: 0.5rem;
+    position: absolute;
+    top: 7.3rem;
+    left: 1.4rem;
+}
+.page2 .yuanxiao{
+     font-size: 0.5rem;
+     position: absolute;
+     top: 8.1rem;
+     left: 1.4rem;
+ }
+.page2 .zhuanye{
+    font-size: 0.5rem;
+    position: absolute;
+    top: 8.9rem;
+    left: 1.4rem;
+}
+
+
+.page3{
+    background: url("../4dcf966e78a1ca2070d34bc74fd47f35%20(1).jpg");
+    width: 6.4rem;
+    background-size: 6.5rem 12rem;
+}
+.page3 .xuhao{
+    width: 1.1rem;
+    height: 1.1rem;
+    position: absolute;
+    top: 3rem;
+    left: 0.4rem;
+}
+.page3 .xuhao img{
+    width: 100%;
+    height: 100%;
+}
+.page3 .xuhao span{
+    font-size: 0.45rem;
+    display: block;
+    position: absolute;
+    top: 0.4rem;
+    left: 0.33rem;
+}
+
+.page3 .zhuanyejineng{
+    font-size: 0.5rem;
+    position: absolute;
+    top: 3.3rem;
+    left: 1.8rem;
+}
+.page3 .jineng1{
+     font-size: 0.55rem;
+     position: absolute;
+     top: 4.2rem;
+     left: 0.8rem;
+ }
+.page3 .jineng2{
+    font-size: 0.55rem;
+    position: absolute;
+    top: 5.7rem;
+    right: 0.8rem;
+}
+.page3 .jineng3{
+    font-size: 0.55rem;
+    position: absolute;
+    top: 7rem;
+    left: 0.8rem;
+}
+.page3 .jineng4{
+    font-size: 0.55rem;
+    position: absolute;
+    top: 8.4rem;
+    right:0.8rem;
+}
+
+.page3 .jindutiao{
+    width: 6.4rem;
+    height: 0.5rem;
+    background: gray;
+
+}
+.page3 .jindutiao1{
+     position: absolute;
+     top: 5rem;
+     left: 0rem;
+ }
+.page3 .jindutiao2{
+    position: absolute;
+    top: 6.4rem;
+    left: 0rem;
+}
+.page3 .jindutiao3{
+    position: absolute;
+    top: 7.7rem;
+    left: 0rem;
+}
+.page3 .jindutiao4{
+    position: absolute;
+    top: 9.1rem;
+    left: 0rem;
+}
+.page3 .jindutiao .tiao1{
+    width: 4.5rem;
+    height: 0.5rem;
+    background: red;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    display: block;
+}
+.page3 .jindutiao .tiao2{
+    width: 4.5rem;
+    height: 0.5rem;
+    background: purple;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    display: block;
+
+}
+.page3 .jindutiao .tiao3{
+    width: 5.3rem;
+    height: 0.5rem;
+    background: red;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    display: block;
+
+}
+.page3 .jindutiao .tiao4{
+    width: 4rem;
+    height: 0.5rem;
+    background: purple;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    display: block;
+
+}
+
+.jindu1{
+    animation: jindutiao1 5s linear forwards;
+    /*animation-delay: 1s;*/
+}
+@keyframes jindutiao1 {
+    0%{width:0;}
+    100%{width:5.3rem;}
+}
+
+.jindu2{
+    animation: jindutiao2 5s linear forwards;
+    /*animation-delay: 1s;*/
+}
+@keyframes jindutiao2 {
+    0%{width:0;}
+    100%{width:4.6rem;}
+}
+
+.jindu3{
+    animation: jindutiao3 5s linear forwards;
+    /*animation-delay: 1s;*/
+}
+@keyframes jindutiao3 {
+    0%{width:0;}
+    100%{width:5.5rem;}
+}
+
+.jindu4{
+    animation: jindutiao4 5s linear forwards;
+    /*animation-delay: 1s;*/
+}
+@keyframes jindutiao4 {
+    0%{width:0;}
+    100%{width:4.4rem;}
+}
+
+
+.page4{
+    background: url("../4dcf966e78a1ca2070d34bc74fd47f35%20(1).jpg");
+    width: 6.4rem;
+    background-size: 6.5rem 12rem;
+}
+.page4 .xuhao{
+    width: 1.1rem;
+    height: 1.1rem;
+    position: absolute;
+    top: 3rem;
+    left: 0.4rem;
+}
+.page4 .xuhao img{
+    width: 100%;
+    height: 100%;
+}
+.page4 .xuhao span{
+    font-size: 0.45rem;
+    display: block;
+    position: absolute;
+    top: 0.4rem;
+    left: 0.33rem;
+}
+.page4 .xiangmuzhanshi{
+    font-size: 0.5rem;
+    position: absolute;
+    top: 3.3rem;
+    left: 1.8rem;
+}
+
+.page4 .zuopin1{
+    display: block;
+    width: 1.8rem;
+    height: 2.8rem;
+    font-size: 0.38rem;
+    text-align: center;
+    color: black;
+    position: absolute;
+    top: 4.2rem;
+    left:1rem;
+}
+.page4 .zuopin1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.page4 .zuopin2{
+    display: block;
+    width: 1.8rem;
+    height: 2.8rem;
+    font-size: 0.38rem;
+    text-align: center;
+    color: black;
+    position: absolute;
+    top: 4.2rem;
+    right:1rem;
+}
+.page4 .zuopin2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.page4 .zuopin3{
+    display: block;
+    width: 1.8rem;
+    height: 2.8rem;
+    font-size: 0.38rem;
+    text-align: center;
+    color: black;
+    position: absolute;
+    top: 7.6rem;
+    left:1rem;
+}
+.page4 .zuopin3 img{
+    width: 100%;
+    height: 100%;
+}
+
+.page4 .zuopin4{
+    display: block;
+    width: 1.8rem;
+    height: 2.8rem;
+    font-size: 0.38rem;
+    text-align: center;
+    color: black;
+    position: absolute;
+    top: 7.6rem;
+    right:1rem;
+}
+.page4 .zuopin4 img{
+    width: 100%;
+    height: 100%;
+}
+
+.page5{
+    background: url("../4dcf966e78a1ca2070d34bc74fd47f35%20(1).jpg");
+    width: 6.4rem;
+    background-size: 6.5rem 12rem;
+}
+.page5 .xuhao{
+    width: 1.1rem;
+    height: 1.1rem;
+    position: absolute;
+    top: 3rem;
+    left: 0.4rem;
+}
+.page5 .xuhao img{
+    width: 100%;
+    height: 100%;
+}
+.page5 .xuhao span{
+    font-size: 0.45rem;
+    display: block;
+    position: absolute;
+    top: 0.4rem;
+    left: 0.33rem;
+}
+.page5 .gerenxuanyan{
+    font-size: 0.5rem;
+    position: absolute;
+    top: 3.3rem;
+    left: 1.8rem;
+}
+
+.page5 .xuanyan{
+    font-size: 0.3rem;
+    position: absolute;
+    top: 4.2rem;
+    left: 0.8rem;
+
+}
+.page5 .xuanyan2{
+    font-size: 0.3rem;
+    position: absolute;
+    top: 7.2rem;
+    left: 0.8rem;
+
+}
+
+
+.page6{
+    background: url("../4dcf966e78a1ca2070d34bc74fd47f35%20(1).jpg");
+    width: 6.4rem;
+    background-size: 6.5rem 12rem;
+}
+.page6 .xuhao{
+    width: 1.1rem;
+    height: 1.1rem;
+    position: absolute;
+    top: 3rem;
+    left: 0.4rem;
+}
+.page6 .xuhao img{
+    width: 100%;
+    height: 100%;
+}
+.page6 .xuhao span{
+    font-size: 0.45rem;
+    display: block;
+    position: absolute;
+    top: 0.4rem;
+    left: 0.33rem;
+}
+.page6 .gerenxuanyan{
+    font-size: 0.5rem;
+    position: absolute;
+    top: 3.3rem;
+    left: 1.8rem;
+}
+
+.page6 p{
+    font-size: 0.5rem;
+}
+.page6 .dianhua{
+    position: absolute;
+    top: 4.8rem;
+    left: 0.8rem;
+}
+.page6 .qq{
+    position: absolute;
+    top: 6.2rem;
+    left: 0.8rem;
+}
+.page6 .youxiang{
+    position: absolute;
+    top: 7.8rem;
+    left: 0.8rem;
+}
+.page6 .dizhi{
+    position: absolute;
+    top: 9.2rem;
+    left: 0.8rem;
+}
+
+
+.page7{
+    background: url("../4dcf966e78a1ca2070d34bc74fd47f35%20(1).jpg");
+    width: 6.4rem;
+    background-size: 6.5rem 12rem;
+}
+.page7 .xuhao{
+    width: 1.1rem;
+    height: 1.1rem;
+    position: absolute;
+    top: 3rem;
+    left: 0.4rem;
+}
+.page7 .xuhao img{
+    width: 100%;
+    height: 100%;
+}
+.page7 .xuhao span{
+    font-size: 0.45rem;
+    display: block;
+    position: absolute;
+    top: 0.4rem;
+    left: 0.33rem;
+}
+.page7 .gerenxuanyan{
+    font-size: 0.5rem;
+    position: absolute;
+    top: 3.3rem;
+    left: 1.8rem;
+}
+
+
+.page7 .erweima{
+    width: 4rem;
+    height: 4rem;
+    font-size: 0.5rem;
+    position: absolute;
+    top: 4.5rem;
+    left: 1.1rem;
+    text-align: center;
+}
+.page7 .erweima img{
+    width: 100%;
+    height: 100%;
+}
+.page7 .saoyisao{
+    font-size: 0.5rem;
+    position: absolute;
+    top: 9rem;
+    left: 2rem;
+
+}
