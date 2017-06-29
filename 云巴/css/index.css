@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.lunbodian>li{
+    border: 1px solid orangered;
+
+}
+
+.wrap{
+    margin-top: 150px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.lunbodian>.active{
+    background: red;
+}
+
+
+@media screen and (min-width: 768px){
+    .banner{
+        height: 200px;
+    }
+    .right{
+        text-align: right;
+        position: relative;
+        top: 150px;
+        z-index: 999;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .banner{
+        height: 250px;
+    }
+    .right{
+        position: static;
+    }
+}
+
+.con{
+    position: absolute;
+    top: -150px;
+    left: 50%;
+    margin-left: -40%;
+    z-index: 0;
+    animation: con 25s linear infinite
+}
+@keyframes con {
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+
+
+
+
+.container{
+    margin-top: 50px;
+}
+
+
+
+.well:hover{
+
+}
+
+
+
